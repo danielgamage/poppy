@@ -582,6 +582,9 @@ a {
   -ms-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
   transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease; }
 
+html {
+  font-size: 3vh; }
+
 a.cover {
   display: block;
   padding: 2rem;
@@ -590,8 +593,8 @@ a.cover {
 h3 {
   color: #FFF;
   font-size: 3rem;
-  font-size: 10vh;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  white-space: nowrap; }
 
 section.block {
   display: -webkit-flex;

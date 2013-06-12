@@ -70,7 +70,9 @@ a {
 	transition: $transitions;
 }
 
-body {}
+html {
+    font-size: 3vh;
+}
 
 a.cover {
     display: block;
@@ -83,8 +85,8 @@ a.cover {
 h3 {
     color: #FFF;
     font-size: 3rem;
-    font-size: 10vh;
     margin-right: 2rem;
+    white-space: nowrap;
 }
 
 header {}
