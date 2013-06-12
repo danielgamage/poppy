@@ -15,8 +15,8 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <script type="text/javascript" src="http://site.decomoji.jp/js/nQVUl.js" charset="utf-8"></script>
-        <script type="text/javascript">try{DecoMoji.load()}catch(e){}</script>
+        <script type="text/javascript" src="//use.typekit.net/jic8rts.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -34,6 +34,7 @@
                     <h3>item <?php echo $i ?></h3>
                 </a>
             </section>
+            <section></section>
             <?php endwhile; ?>
         </main>
 
