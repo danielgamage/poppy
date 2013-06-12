@@ -20,6 +20,11 @@ textarea {
     color: #222;
 }
 
+html,
+body {
+    overflow-y: hidden;
+}
+
 body {
     font-size: 1em;
     line-height: 1.4;
@@ -115,11 +120,11 @@ section.block {
     writing-mode: horizontal-tb;
    
     color: #FFF;
+    outline: 0;
 
-    &:focus {
+    &.open {
         height: 8rem;
         padding: 2rem;
-        outline: 0;
     }
 }
 

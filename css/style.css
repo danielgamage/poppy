@@ -544,6 +544,10 @@ select,
 textarea {
   color: #222; }
 
+html,
+body {
+  overflow-y: hidden; }
+
 body {
   font-size: 1em;
   line-height: 1.4;
@@ -611,11 +615,11 @@ section.block {
   font-size: 2rem;
   -webkit-writing-mode: horizontal-tb;
   writing-mode: horizontal-tb;
-  color: #FFF; }
-  .tools:focus {
+  color: #FFF;
+  outline: 0; }
+  .tools.open {
     height: 8rem;
-    padding: 2rem;
-    outline: 0; }
+    padding: 2rem; }
 
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */ }
