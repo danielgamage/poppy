@@ -37,7 +37,6 @@ body {
     -ms-text-rendering: optimizeLegibility;
     -o-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
-    letter-spacing: 5px;
 }
 
 a {
@@ -73,21 +72,23 @@ a {
 
 
 
-h3.cover {
+.cover {
     display: block;
     padding: 2rem;
     width: 100%;
     margin: 0;
-    text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+    text-shadow: $shadow;
+    position: relative;
+    color: #FFF;
+    font-size: 1.5rem;
 }
 
 #container {}
 
 h3 {
-    color: #FFF;
-    font-size: 3rem;
-    margin-right: 2rem;
+    font-size: 4rem;
     white-space: nowrap;
+    margin: 0.5rem 0;
     text-transform: uppercase;
 }
 
@@ -96,6 +97,7 @@ header {}
 main {
 //    display: -webkit-flex;
 //    display: flex;
+    overflow-x: hidden;
 }
 
 section.block {
@@ -103,36 +105,56 @@ section.block {
     display: flex;
     -webkit-flex-flow: row-reverse;
     flex-flow: row-reverse;
+    position: relative;
 }
 
 .tools {
+    position: absolute;
+    height: 100%;
+    left: 0;
     white-space: nowrap;
     display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1) inset;
     
     display: -webkit-flex;
     display: flex;
-
+    -webkit-align-items: center;
+    align-items: center;
+    
     color: #FFF;
     outline: 0;
     
     a {
-        text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+
+        text-shadow: $shadow;
         text-align: center;
         display: block;
-        padding: 2.5rem 0;
         font-size: 2.5rem;
         overflow: hidden;
+        padding: 50% 0;
         width: 0;
-    }
-    a.open {
-        width: 10rem;
-        max-width: 99999rem;
-        padding: 2.5rem;
     }
     a:focus,
     a:hover {
         background-color: rgba(0, 0, 0, 0.2);
     }
 }
+.block.open {
+    a,
+    a:focus,
+    a:target {
+        width: 10rem;
+        max-width: 99999rem;
+    }
+    .cover {
+        left: 30rem;
+    }
+}
+
 
 footer {}

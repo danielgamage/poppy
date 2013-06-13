@@ -16,12 +16,15 @@ $list-left-margin: 40px;
 
 $timing: 0.15s;
 
+$shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+
 $transitions:
 	color $timing ease,
 	box-shadow $timing ease,
 	background $timing ease,
 	opacity $timing ease,
 	width $timing ease,
+	left $timing ease,
 	padding $timing ease,
 	-webkit-transform $timing ease,	
 	text-shadow $timing ease;

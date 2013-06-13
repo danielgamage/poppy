@@ -25,9 +25,14 @@
         <main>
             <?php $i = 0; while( $i < 18 ): $i++; ?>
             <section class="block <?php echo $i ?>">
-                <h3 class="cover" href="#" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 50%);">
-                    item <?php echo $i ?>
-                </h3>
+                <div class="cover" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 50%);">
+                    <h3 href="#" >
+                        item <?php echo $i ?>
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur <?php echo $i ?> adipisicing elit. Illo, quis, aperiam, exercitationem dolore laudantium nobis ipsa facere soluta cumque eaque animi suscipit libero unde ipsam accusantium a officia nam dolores.
+                    </p>
+                </div>
                 <div id="tool<?php echo $i ?>" class="tools icon" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 45%);">
                     <a tabindex="<?php echo $i * 3 - 2 ?>" href="#view<?php echo $i ?>">view</a>
                     <a tabindex="<?php echo $i * 3 - 1 ?>" href="#location<?php echo $i ?>">location</a>

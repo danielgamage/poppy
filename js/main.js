@@ -1,14 +1,12 @@
 $(document).ready(function() {
 
 	$('.cover').click(function() {
-		$('.tools a').removeClass('open');
-		$(this).siblings('.tools').children().each(function() {
-			if ($(this).hasClass('open')) {
-				$(this).removeClass('open');
-			} else {
-				$(this).addClass('open');
-			}
-		});
+		if ($(this).parent().hasClass('open')) {
+			$(this).parent().removeClass('open');
+		} else {
+			$('.block').removeClass('open');
+			$(this).parent().addClass('open');
+		}
 	});
 
 });
