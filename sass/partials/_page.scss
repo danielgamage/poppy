@@ -20,13 +20,17 @@ textarea {
     color: #222;
 }
 
+html {
+    font-size: 3vh;
+}
+
 html,
 body {
     overflow-y: hidden;
 }
 
 body {
-    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.4;
     -webkit-text-rendering: optimizeLegibility;
     -moz-text-rendering: optimizeLegibility;
@@ -75,14 +79,18 @@ a {
 	transition: $transitions;
 }
 
-html {
-    font-size: 3vh;
-}
+
 
 a.cover {
     display: block;
     padding: 2rem;
     height: 100%;
+}
+
+a.cover:hover + .tools a,
+.tools:hover a {
+    height: 8rem;
+    padding: 2rem;
 }
 
 #container {}
@@ -104,27 +112,40 @@ main {
 section.block {
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row-reverse;
 }
 
 .tools {
     white-space: nowrap;
-    height: 0;
-    overflow: hidden;
     display: inline-block;
     -webkit-transition: $transitions;
     transition: $transitions;
-    padding: 0 2rem;
     font-size: 2rem;
+    overflow: hidden;
+    
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row-reverse;
 
     -webkit-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
    
     color: #FFF;
     outline: 0;
-
-    &.open {
+    
+    a {
+        height: 0;
+        display: block;
+        padding: 0 2rem;
+        font-size: 2rem;
+    }
+    a:focus {
         height: 8rem;
         padding: 2rem;
+    }
+    a:focus,
+    a:hover {
+        background-color: rgba(0, 0, 0, 0.2);
     }
 }
 

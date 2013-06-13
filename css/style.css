@@ -544,12 +544,15 @@ select,
 textarea {
   color: #222; }
 
+html {
+  font-size: 3vh; }
+
 html,
 body {
   overflow-y: hidden; }
 
 body {
-  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
   line-height: 1.4;
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
@@ -586,13 +589,15 @@ a {
   -ms-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
   transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease; }
 
-html {
-  font-size: 3vh; }
-
 a.cover {
   display: block;
   padding: 2rem;
   height: 100%; }
+
+a.cover:hover + .tools a,
+.tools:hover a {
+  height: 8rem;
+  padding: 2rem; }
 
 h3 {
   color: #FFF;
@@ -602,24 +607,34 @@ h3 {
 
 section.block {
   display: -webkit-flex;
-  display: flex; }
+  display: flex;
+  -webkit-flex-flow: row-reverse; }
 
 .tools {
   white-space: nowrap;
-  height: 0;
-  overflow: hidden;
   display: inline-block;
   -webkit-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
   transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
-  padding: 0 2rem;
   font-size: 2rem;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row-reverse;
   -webkit-writing-mode: horizontal-tb;
   writing-mode: horizontal-tb;
   color: #FFF;
   outline: 0; }
-  .tools.open {
+  .tools a {
+    height: 0;
+    display: block;
+    padding: 0 2rem;
+    font-size: 2rem; }
+  .tools a:focus {
     height: 8rem;
     padding: 2rem; }
+  .tools a:focus,
+  .tools a:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
 
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */ }

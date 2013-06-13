@@ -15,8 +15,8 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <script type="text/javascript" src="http://site.decomoji.jp/js/nQVUl.js" charset="utf-8"></script>
-        <script type="text/javascript">try{DecoMoji.load()}catch(e){}</script>
+        <script type="text/javascript" src="//use.typekit.net/jic8rts.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -24,21 +24,18 @@
         <![endif]-->
         <main>
             <?php $i = 0; while( $i < 10 ): $i++; ?>
-            <section class="block">
-                <div id="tool<?php echo $i ?>" class="tools icon" tabindex="0" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 45%);">
-                    <a href="#tool<?php echo $i ?>">view</a>
+            <section class="block <?php echo $i ?>">
+                <a class="cover" href="#" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 50%);">
+                    <h3>item <?php echo $i ?></h3>
+                </a>
+                <div id="tool<?php echo $i ?>" class="tools icon" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 45%);">
+                    <a id="view<?php echo $i ?>" href="#tool<?php echo $i ?>">view</a>
                     <a href="#tool<?php echo $i ?>">location</a>
                     <a href="#tool<?php echo $i ?>">cart</a>
                 </div>
-                <a class="cover" href="#tool<?php echo $i ?>" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 50%);">
-                    <h3>item <?php echo $i ?></h3>
-                </a>
             </section>
             <?php endwhile; ?>
         </main>
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
