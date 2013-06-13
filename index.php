@@ -25,9 +25,9 @@
         <main>
             <?php $i = 0; while( $i < 10 ): $i++; ?>
             <section class="block <?php echo $i ?>">
-                <a class="cover" href="#" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 50%);">
-                    <h3>item <?php echo $i ?></h3>
-                </a>
+                <h3 class="cover" href="#" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 50%);">
+                    item <?php echo $i ?>
+                </h3>
                 <div id="tool<?php echo $i ?>" class="tools icon" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 45%);">
                     <a id="view<?php echo $i ?>" href="#tool<?php echo $i ?>">view</a>
                     <a href="#tool<?php echo $i ?>">location</a>

@@ -589,15 +589,11 @@ a {
   -ms-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
   transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease; }
 
-a.cover {
+h3.cover {
   display: block;
   padding: 2rem;
-  height: 100%; }
-
-a.cover:hover + .tools a,
-.tools:hover a {
-  height: 8rem;
-  padding: 2rem; }
+  height: 100%;
+  margin: 0; }
 
 h3 {
   color: #FFF;
@@ -629,7 +625,7 @@ section.block {
     display: block;
     padding: 0 2rem;
     font-size: 2rem; }
-  .tools a:focus {
+  .tools a.open {
     height: 8rem;
     padding: 2rem; }
   .tools a:focus,
