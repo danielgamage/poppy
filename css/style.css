@@ -622,7 +622,7 @@ section.block {
     overflow: hidden;
     width: 0; }
   .tools a.open {
-    width: 32rem;
+    width: 10rem;
     max-width: 99999rem;
     padding: 2.5rem; }
   .tools a:focus,
