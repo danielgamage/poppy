@@ -23,15 +23,15 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         <main>
-            <?php $i = 0; while( $i < 10 ): $i++; ?>
+            <?php $i = 0; while( $i < 18 ): $i++; ?>
             <section class="block <?php echo $i ?>">
                 <h3 class="cover" href="#" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 50%);">
                     item <?php echo $i ?>
                 </h3>
                 <div id="tool<?php echo $i ?>" class="tools icon" style="background-color: hsl(<?php echo $i * 20; ?>, 100%, 45%);">
-                    <a id="view<?php echo $i ?>" href="#tool<?php echo $i ?>">view</a>
-                    <a href="#tool<?php echo $i ?>">location</a>
-                    <a href="#tool<?php echo $i ?>">cart</a>
+                    <a tabindex="<?php echo $i * 3 - 2 ?>" href="#view<?php echo $i ?>">view</a>
+                    <a tabindex="<?php echo $i * 3 - 1 ?>" href="#location<?php echo $i ?>">location</a>
+                    <a tabindex="<?php echo $i * 3 - 0 ?>" href="#cart<?php echo $i ?>">cart</a>
                 </div>
             </section>
             <?php endwhile; ?>

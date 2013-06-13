@@ -545,7 +545,7 @@ textarea {
   color: #222; }
 
 html {
-  font-size: 3vh; }
+  font-size: 2vw; }
 
 html,
 body {
@@ -559,9 +559,6 @@ body {
   -ms-text-rendering: optimizeLegibility;
   -o-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
-  -webkit-writing-mode: vertical-rl;
-  -moz-writing-mode: lr-tb;
-  writing-mode: vertical-rl;
   letter-spacing: 5px; }
 
 a {
@@ -585,49 +582,49 @@ a {
   margin: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
-  -ms-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
-  transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease; }
+  -webkit-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, width 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
+  -ms-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, width 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
+  transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, width 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease; }
 
 h3.cover {
   display: block;
   padding: 2rem;
-  height: 100%;
-  margin: 0; }
+  width: 100%;
+  margin: 0;
+  text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2); }
 
 h3 {
   color: #FFF;
   font-size: 3rem;
   margin-right: 2rem;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-transform: uppercase; }
 
 section.block {
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row-reverse; }
+  -webkit-flex-flow: row-reverse;
+  flex-flow: row-reverse; }
 
 .tools {
   white-space: nowrap;
   display: inline-block;
-  -webkit-transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
-  transition: color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, opacity 0.15s ease, height 0.15s ease, padding 0.15s ease, -webkit-transform 0.15s ease, text-shadow 0.15s ease;
-  font-size: 2rem;
-  overflow: hidden;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row-reverse;
-  -webkit-writing-mode: horizontal-tb;
-  writing-mode: horizontal-tb;
   color: #FFF;
   outline: 0; }
   .tools a {
-    height: 0;
+    text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+    text-align: center;
     display: block;
-    padding: 0 2rem;
-    font-size: 2rem; }
+    padding: 2.5rem 0;
+    font-size: 2.5rem;
+    overflow: hidden;
+    width: 0; }
   .tools a.open {
-    height: 8rem;
-    padding: 2rem; }
+    width: 32rem;
+    max-width: 99999rem;
+    padding: 2.5rem; }
   .tools a:focus,
   .tools a:hover {
     background-color: rgba(0, 0, 0, 0.2); }

@@ -14,12 +14,14 @@ $link-hover-color: #06e;
 // Lists
 $list-left-margin: 40px;
 
+$timing: 0.15s;
+
 $transitions:
-	color 0.15s ease,
-	box-shadow 0.15s ease,
-	background 0.15s ease,
-	opacity 0.15s ease,
-	height 0.15s ease,
-	padding 0.15s ease,
-	-webkit-transform 0.15s ease,	
-	text-shadow 0.15s ease;
+	color $timing ease,
+	box-shadow $timing ease,
+	background $timing ease,
+	opacity $timing ease,
+	width $timing ease,
+	padding $timing ease,
+	-webkit-transform $timing ease,	
+	text-shadow $timing ease;

@@ -21,7 +21,7 @@ textarea {
 }
 
 html {
-    font-size: 3vh;
+    font-size: 2vw;
 }
 
 html,
@@ -37,14 +37,6 @@ body {
     -ms-text-rendering: optimizeLegibility;
     -o-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
-    
-    -webkit-writing-mode: vertical-rl;
-    -moz-writing-mode: lr-tb;
-    writing-mode: vertical-rl;
-    
-//    -webkit-text-orientation: upright;
-//    -moz-text-orientation: upright;
-//    text-orientation: upright;
     letter-spacing: 5px;
 }
 
@@ -84,8 +76,9 @@ a {
 h3.cover {
     display: block;
     padding: 2rem;
-    height: 100%;
+    width: 100%;
     margin: 0;
+    text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
 }
 
 #container {}
@@ -95,6 +88,7 @@ h3 {
     font-size: 3rem;
     margin-right: 2rem;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
 header {}
@@ -108,35 +102,32 @@ section.block {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row-reverse;
+    flex-flow: row-reverse;
 }
 
 .tools {
     white-space: nowrap;
     display: inline-block;
-    -webkit-transition: $transitions;
-    transition: $transitions;
-    font-size: 2rem;
-    overflow: hidden;
     
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: row-reverse;
 
-    -webkit-writing-mode: horizontal-tb;
-    writing-mode: horizontal-tb;
-   
     color: #FFF;
     outline: 0;
     
     a {
-        height: 0;
+        text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+        text-align: center;
         display: block;
-        padding: 0 2rem;
-        font-size: 2rem;
+        padding: 2.5rem 0;
+        font-size: 2.5rem;
+        overflow: hidden;
+        width: 0;
     }
     a.open {
-        height: 8rem;
-        padding: 2rem;
+        width: 32rem;
+        max-width: 99999rem;
+        padding: 2.5rem;
     }
     a:focus,
     a:hover {
