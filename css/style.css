@@ -562,7 +562,10 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  -ms-touch-action: none !important;
+  -webkit-touch-action: none !important;
+  touch-action: none !important; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -626,10 +629,6 @@ section.block {
   color: #FFF;
   outline: 0; }
   .tools a {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
     text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
     text-align: center;
     display: block;

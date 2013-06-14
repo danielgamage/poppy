@@ -42,6 +42,9 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    -ms-touch-action: none !important;
+    -webkit-touch-action: none !important;
+    touch-action: none !important;
 }
 
 /*
@@ -126,11 +129,6 @@ section.block {
     outline: 0;
     
     a {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-
         text-shadow: $shadow;
         text-align: center;
         display: block;
